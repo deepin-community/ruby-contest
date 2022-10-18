@@ -1,0 +1,22 @@
+Source: ruby-contest
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <cedric.boutillier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-contest.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-contest.git;a=summary
+Homepage: http://github.com/citrusbyte/contest
+XS-Ruby-Versions: all
+Testsuite: autopkgtest-pkg-ruby
+
+Package: ruby-contest
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+Description: Ruby library to write declarative tests using nested contexts
+ Contest allows you to write with Test::Unit declarative tests using
+ nested contexts with a syntax similar to RSpec or Shoulda, and without
+ performance penalties. This library is less than 100 lines of code and
+ gets the job done.

@@ -1,0 +1,63 @@
+--- !ruby/object:Gem::Specification 
+name: contest
+version: !ruby/object:Gem::Version 
+  prerelease: 
+  version: 0.1.3
+platform: ruby
+authors: 
+- Damian Janowski
+- Michel Martens
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2011-05-08 00:00:00 Z
+dependencies: []
+
+description: Write declarative tests using nested contexts without performance penalties. Contest is less than 100 lines of code and gets the job done.
+email: 
+- djanowski@dimaion.com
+- michel@soveran.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/contest.rb
+- README.markdown
+- LICENSE
+- Rakefile
+- rails/init.rb
+- test/all_test.rb
+- test/setup_and_teardown_order_test.rb
+homepage: http://github.com/citrusbyte/contest
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+requirements: []
+
+rubyforge_project: contest
+rubygems_version: 1.8.1
+signing_key: 
+specification_version: 3
+summary: Write more readable tests in Test::Unit with this tiny script.
+test_files: []
+

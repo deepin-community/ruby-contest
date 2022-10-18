@@ -1,0 +1,22 @@
+Description: fix require for autopkgtests
+Author: Jonas Genannt <jonas.genannt@capi2name.de>
+Forwarded: not-need
+
+--- a/test/all_test.rb
++++ b/test/all_test.rb
+@@ -1,5 +1,4 @@
+-require File.expand_path(File.join("..", "lib", "contest"),
+-                         File.dirname(__FILE__))
++require 'contest'
+ 
+ class FooTest < Test::Unit::TestCase
+   setup do
+--- a/test/setup_and_teardown_order_test.rb
++++ b/test/setup_and_teardown_order_test.rb
+@@ -1,5 +1,4 @@
+-require File.expand_path(File.join("..", "lib", "contest"),
+-                         File.dirname(__FILE__))
++require 'contest'
+ 
+ class BaseTest < Test::Unit::TestCase
+   def setup
